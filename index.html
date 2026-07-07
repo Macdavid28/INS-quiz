@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Analysis & Design Mastery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <section id="landing-page" class="screen active">
+            <h1>System Analysis & Design</h1>
+            <p>Master the fundamentals of SDLC, DFDs, ERDs, and system methodologies. Test your knowledge with a randomized set of practice questions.</p>
+            <button id="start-btn" class="btn primary-btn">Start Quiz</button>
+        </section>
+
+        <section id="quiz-page" class="screen hidden">
+            <header class="quiz-header">
+                <div class="stats-bar">
+                    <span class="stat correct">✅ Correct: <span id="correct-count">0</span></span>
+                    <span class="stat wrong">❌ Wrong: <span id="wrong-count">0</span></span>
+                    <span class="stat left">⏳ Left: <span id="left-count">0</span></span>
+                </div>
+                <div class="progress-container">
+                    <div id="progress-text">Question 1 of X</div>
+                    <div class="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="question-container">
+                <h2 id="question-text">Question goes here?</h2>
+                <div id="options-container" class="options-grid">
+                    </div>
+                <div id="feedback-container" class="feedback hidden">
+                    <p id="explanation-text"></p>
+                    <button id="next-btn" class="btn secondary-btn">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="results-page" class="screen hidden">
+            <h1>Quiz Complete!</h1>
+            <div class="results-dashboard">
+                <div class="result-card">
+                    <h3>Total Questions</h3>
+                    <p id="res-total">0</p>
+                </div>
+                <div class="result-card">
+                    <h3>Correct</h3>
+                    <p id="res-correct" class="text-correct">0</p>
+                </div>
+                <div class="result-card">
+                    <h3>Wrong</h3>
+                    <p id="res-wrong" class="text-wrong">0</p>
+                </div>
+                <div class="result-card">
+                    <h3>Score</h3>
+                    <p id="res-score">0%</p>
+                </div>
+            </div>
+            <h2 id="performance-message">Great Job!</h2>
+            <button id="retake-btn" class="btn primary-btn">Retake Quiz</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
